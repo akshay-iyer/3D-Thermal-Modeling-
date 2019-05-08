@@ -1,0 +1,22 @@
+<launch>
+	<group ns="optris">
+		<node name="optris_imager_node" pkg="optris_drivers" type="optris_imager_node">
+			<!-- Set configuration file of your camera here! -->
+			<param name="xmlConfig"      type="string" value="$(find optris_drivers)/config/14040047.xml"/>  
+		</node>
+	</group>
+	
+	<node name="streamer_node" pkg="thermalvis" type="streamer" output="screen">
+		<param name="source" value="topic" />
+		<param name="topic" value="/optris/thermal_image" />
+		<param name="syncMode" value="2" />
+		<param name="desiredDegreesPerGraylevel" value="0.02" />
+	</node>
+	
+	<node name="image_view_node" pkg="image_view" type="image_view" output="screen">
+		<remap from="image" to="thermalvis/streamer_node/image_col"/>
+		<param name="~/autosize" value="true" />
+	</node>
+	
+	<node pkg="rqt_reconfigure" type="rqt_reconfigure" name="cfg_streamer" output="screen" args="/streamer_node"/>
+</launch>

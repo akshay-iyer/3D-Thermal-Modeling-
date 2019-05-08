@@ -1,0 +1,25 @@
+<launch>
+
+	<node name="streamer_reprocessed" pkg="thermalvis" type="streamer" output="screen">
+		<param name="source" value="file" />
+		<param name="file" value="~/Documents/Data/miricle/icarcv/capture-11.avi" />
+		
+		<param name="inputDatatype" value="1" /> <!-- 0 for 8-bit, 1 for raw (14-bit), 2 for multi-modality (2 channel), 3 for depth (16-bit) -->
+		
+		<param name="outputType" value="2" /> <!-- 0 for 8-bit grayscale, 1 for 8-bit color, 2 for 16-bit grayscale -->
+		<param name="writeImages" value="true" />
+		<param name="outputFolder" value="~/Documents/Data/miricle/icarcv/capture-11" />
+		
+		<param name="removeDuplicates" value="true" />
+		
+		<param name="outputColor" value="true" />
+	</node>
+	
+	<node pkg="image_view" type="image_view" name="color_thermal" output="screen">
+		<remap from="image" to="/thermalvis/streamer/image_col"/>
+		<param name="~/autosize" value="true" />
+	</node>
+	
+	<node pkg="rqt_reconfigure" type="rqt_reconfigure" name="cfg_streamer" output="screen" args="/streamer_reprocessed"/>
+	
+</launch>

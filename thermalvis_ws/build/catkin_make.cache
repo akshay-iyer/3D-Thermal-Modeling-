@@ -1,0 +1,2 @@
+thermalvis-master
+-DCATKIN_DEVEL_PREFIX=/home/akshay/thermalvis_ws/devel -DCMAKE_INSTALL_PREFIX=/home/akshay/thermalvis_ws/install -G Unix Makefiles

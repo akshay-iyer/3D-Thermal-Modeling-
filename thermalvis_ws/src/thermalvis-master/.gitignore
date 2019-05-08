@@ -1,0 +1,11 @@
+*.*~
+*.dox
+*.wikidoc
+*.user
+output/*
+scripts/batch/IPC Sample.log
+scripts/batch/heatmap-*.jpg
+media/wiki/Thumbs.db
+media/sample_video/calibration/Thumbs.db
+build
+

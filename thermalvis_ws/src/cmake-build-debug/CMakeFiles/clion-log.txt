@@ -1,0 +1,197 @@
+/home/akshay/Documents/Books/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/akshay/thermalvis_ws/src
+-- Using CATKIN_DEVEL_PREFIX: /home/akshay/thermalvis_ws/src/cmake-build-debug/devel
+-- Using CMAKE_PREFIX_PATH: /home/akshay/thermalvis_ws/devel;/opt/ros/kinetic
+-- This workspace overlays: /home/akshay/thermalvis_ws/devel;/opt/ros/kinetic
+-- Using PYTHON_EXECUTABLE: /usr/bin/python
+-- Using Debian Python package layout
+-- Using empy: /usr/bin/empy
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/akshay/thermalvis_ws/src/cmake-build-debug/test_results
+-- Found gmock sources under '/usr/src/gmock': gmock will be built
+-- Found gtest sources under '/usr/src/gmock': gtests will be built
+-- Using Python nosetests: /usr/bin/nosetests-2.7
+-- catkin 0.7.14
+-- BUILD_SHARED_LIBS is on
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 1 packages in topological order:
+-- ~~  - thermalvis
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin package: 'thermalvis'
+-- ==> add_subdirectory(thermalvis-master)
+-- Appear to NOT be building from within a catkin directory...
+-- catkin has been found
+CMake Warning at thermalvis-master/cmake/configure/framework.cmake:24 (MESSAGE):
+  Even though catkin has been found, it doesn't appear that the source is in
+  a catkin-related directory, .
+Call Stack (most recent call first):
+  thermalvis-master/CMakeLists.txt:18 (include)
+
+
+CMake Warning at thermalvis-master/cmake/configure/framework.cmake:40 (MESSAGE):
+  Even though catkin has been found, <BUILD_FOR_ROS> has already been set
+  false so this will be treated as a non-ROS build.
+Call Stack (most recent call first):
+  thermalvis-master/CMakeLists.txt:18 (include)
+
+
+CMake Warning (dev) at thermalvis-master/cmake/find/avutil.cmake:11 (if):
+  Policy CMP0054 is not set: Only interpret if() arguments as variables or
+  keywords when unquoted.  Run "cmake --help-policy CMP0054" for policy
+  details.  Use the cmake_policy command to set the policy and suppress this
+  warning.
+
+  Quoted variables like "AVUTIL_LIBRARY" will no longer be dereferenced when
+  the policy is set to NEW.  Since the policy is not set the OLD behavior
+  will be used.
+Call Stack (most recent call first):
+  thermalvis-master/CMakeLists.txt:23 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Doxygen was found!
+-- Doxygen will be used to build documentation.
+-- Doxygen can now be used to build documentation. To do this automatically each build, set the <FORCE_DOCS> flag to true.
+-- qt Installation has OpenGL = TRUE
+CMake Warning (dev) at thermalvis-master/cmake/find/qt.cmake:78 (IF):
+  Policy CMP0054 is not set: Only interpret if() arguments as variables or
+  keywords when unquoted.  Run "cmake --help-policy CMP0054" for policy
+  details.  Use the cmake_policy command to set the policy and suppress this
+  warning.
+
+  Quoted variables like "QT_VERSION_MINOR" will no longer be dereferenced
+  when the policy is set to NEW.  Since the policy is not set the OLD
+  behavior will be used.
+Call Stack (most recent call first):
+  thermalvis-master/CMakeLists.txt:23 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Checking for module 'libopenni2'
+--   No package 'libopenni2' found
+-- Could NOT find OpenNI2 (missing: OPENNI2_LIBRARY OPENNI2_INCLUDE_DIRS) 
+-- The imported target "vtkRenderingPythonTkWidgets" references the file
+   "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-6.2/VTKTargets.cmake"
+but not all the files it references.
+
+-- The imported target "vtk" references the file
+   "/usr/bin/vtk"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-6.2/VTKTargets.cmake"
+but not all the files it references.
+
+-- Checking for module 'libopenni2'
+--   No package 'libopenni2' found
+-- Could NOT find OpenNI2 (missing: OPENNI2_LIBRARY OPENNI2_INCLUDE_DIRS) 
+-- Could NOT find PCL_APPS (missing: PCL_APPS_LIBRARY) 
+CMake Warning (dev) at thermalvis-master/cmake/find/pcl.cmake:20 (find_package):
+  Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+  Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  CMake variable PCL_ROOT is set to:
+
+    /usr
+
+  For compatibility, CMake is ignoring the variable.
+Call Stack (most recent call first):
+  thermalvis-master/CMakeLists.txt:23 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Boost version: 1.58.0
+-- Found the following Boost libraries:
+--   system
+--   filesystem
+--   thread
+--   date_time
+--   iostreams
+--   serialization
+--   chrono
+--   atomic
+--   regex
+-- Checking for module 'libopenni2'
+--   No package 'libopenni2' found
+-- Could NOT find OpenNI2 (missing: OPENNI2_LIBRARY OPENNI2_INCLUDE_DIRS) 
+** WARNING ** io features related to openni2 will be disabled
+** WARNING ** io features related to pcap will be disabled
+** WARNING ** io features related to png will be disabled
+-- Checking for module 'libopenni2'
+--   No package 'libopenni2' found
+-- Could NOT find OpenNI2 (missing: OPENNI2_LIBRARY OPENNI2_INCLUDE_DIRS) 
+** WARNING ** visualization features related to openni2 will be disabled
+-- looking for PCL_COMMON
+-- looking for PCL_KDTREE
+-- looking for PCL_OCTREE
+-- looking for PCL_SEARCH
+-- looking for PCL_IO
+-- looking for PCL_SAMPLE_CONSENSUS
+-- looking for PCL_FILTERS
+-- looking for PCL_GEOMETRY
+-- looking for PCL_FEATURES
+-- looking for PCL_SEGMENTATION
+-- looking for PCL_SURFACE
+-- looking for PCL_REGISTRATION
+-- looking for PCL_RECOGNITION
+-- looking for PCL_KEYPOINTS
+-- looking for PCL_VISUALIZATION
+-- looking for PCL_PEOPLE
+-- looking for PCL_OUTOFCORE
+-- looking for PCL_TRACKING
+-- looking for PCL_APPS
+-- Could NOT find PCL_APPS (missing: PCL_APPS_LIBRARY) 
+-- looking for PCL_MODELER
+-- looking for PCL_IN_HAND_SCANNER
+-- looking for PCL_POINT_CLOUD_EDITOR
+-- PCL Found!
+-- Boost version: 1.58.0
+-- Found the following Boost libraries:
+--   system
+--   filesystem
+--   program_options
+--   date_time
+-- Boost found!
+-- CMAKE_GENERATOR  = Unix Makefiles
+-- Boost version: 1.58.0
+-- Found the following Boost libraries:
+--   system
+--   filesystem
+--   program_options
+--   date_time
+-- Boost_INCLUDE_DIR = /usr/include
+-- Boost_LIBRARY_DIR = /usr/include
+-- Found OpenCV version 2.4.8+
+-- OpenCV Found!
+-- Including DIR: build-streamer-Desktop-Debug
+-- Including DIR: build-calibrator-Desktop-Debug
+-- OpenCV_LIBRARIES = opencv_core;opencv_highgui;opencv_calib3d;opencv_objdetect;opencv_video;opencv_contrib;opencv_legacy;opencv_videostab;opencv_video;opencv_superres;opencv_stitching;opencv_photo;opencv_ocl;opencv_objdetect;opencv_ml;opencv_legacy;opencv_imgproc;opencv_highgui;opencv_gpu;opencv_flann;opencv_features2d;opencv_core;opencv_contrib;opencv_calib3d
+CMake Warning at thermalvis-master/cmake/link/boost.cmake:15 (MESSAGE):
+  Unable to find DLL at /usr/include/libboost_system.so - has Boost Release
+  been built?
+Call Stack (most recent call first):
+  thermalvis-master/apps/mm-calibrator/CMakeLists.txt:68 (include)
+
+
+CMake Warning at thermalvis-master/cmake/link/opencv.cmake:10 (MESSAGE):
+  Unable to find DLL at /usr/local/lib/libopencv_cored.so - has (the correct)
+  OpenCV Debug been built?
+Call Stack (most recent call first):
+  thermalvis-master/apps/mm-calibrator/CMakeLists.txt:68 (include)
+
+
+CMake Warning at thermalvis-master/cmake/link/opencv.cmake:10 (MESSAGE):
+  Unable to find DLL at /usr/local/lib/libopencv_core.so - has (the correct)
+  OpenCV Release been built?
+Call Stack (most recent call first):
+  thermalvis-master/apps/mm-calibrator/CMakeLists.txt:68 (include)
+
+
+-- Will generate docs at /home/akshay/thermalvis_ws/src/cmake-build-debug/thermalvis-master.
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/akshay/thermalvis_ws/src/cmake-build-debug

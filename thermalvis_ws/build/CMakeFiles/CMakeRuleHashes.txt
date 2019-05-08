@@ -1,0 +1,9 @@
+# Hashes of file build rules.
+b58a76daebf1c23e9e750f747388673a CMakeFiles/clean_test_results
+ce288b9989bdcfa1f1b9f2295a6eff48 thermalvis-master/CMakeFiles/Docs
+7e2c31fab8a502328e035f10b0dea608 thermalvis-master/apps/mm-calibrator/CMakeFiles/MM-Calibrator_autogen
+4d8373874bbde26988d86ccad066b025 thermalvis-master/apps/mono-slam/CMakeFiles/MonocularSLAM_autogen
+7d67dfcccf0864d5a916659807410abd thermalvis-master/qt/calibrator/CMakeFiles/calibrator_qt_test_autogen
+29403a46fee5256a6d0737413d451161 thermalvis-master/qt/flow/CMakeFiles/flow_qt_test_autogen
+5636055af24df790fba7d418ff4b74f9 thermalvis-master/qt/slam/CMakeFiles/slam_qt_test_autogen
+3c5f00c6d144ac6bdc73dbdeb374bfd2 thermalvis-master/qt/streamer/CMakeFiles/streamer_qt_test_autogen

@@ -1,0 +1,1 @@
+set(AM_MOC_SETTINGS_HASH "b1a46e7b54ca639ec11b5fbd63f8ef30bcf9ebed42a49b3ee5cd32a191e08775")
