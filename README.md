@@ -26,5 +26,27 @@ We prepared a Hermann grid of dimensions of 24x36 inches as shown in the figure.
 ## Cross Calibration
 For the purpose of Stereo Calibration (Cross calibration of RGB-Thermal cameras), MATLAB Computer Vision Toolbox was used. We used the calibration method outlined by Zhang. The board was held in variety of positions and images were simultaneously taken from the two cameras. Thus we got around 25 image pairs from the stereo rig. The chessboard corners computed from the reference stereo images were then used to compute the camera parameters. The same was repeated using the Hermann board for the depth-thermal cross calibration.
 
+## Creating a 3D thermal model using PointCloud Fusion
+This approach involves fusing a depth point cloud and a thermal point cloud for every pair of image which generates a thermal model. Multiple thermal models can then be incrementally registered using Iterative Closest Point algorithm to form a global thermal map which has been left for future work. This process involves the following steps assuming that the depth and the thermal cameras are already intrinsically and cross calibrated:
+1. Load a pair of thermal and depth image of the same scene 
+2. Create a depth point cloud using the depth image and its intrinsic parameters
+3. Register the depth image and the thermal image
+4. Create a thermal point cloud using the registered thermal image and the intrinsic parameters of the thermal camera
+5. Fuse thermal and depth point cloud to create a 3D thermal model
 
+For a detailed explanation, kindly refer to https://drive.google.com/file/d/1nJGxJrqAVkLG7GgIozAzmcEhZ3U6ULhN/view?usp=sharing
 
+## Sample Results
+
+## Useful Tools and datasets for thermal modeling 
+We have explored a variety of tools for camera calibration as our setup is a multi-modal setup and requires different types of calibration process. They have been specified below alongwith their significance in the project so it can help the readers interested in working in this domain:
+### MATLAB Camera Calibrator
+MATLAB camera calibrator is an app that is part of the Matlab Computer Vision Toolbox. It has the options for both mono camera calibration and stereo camera calibration. This is the most simple and easy to use application for both mono/stereo camera calibrations. 
+### Thermalvis
+Thermalvis is a opensource software written by Stephen Vidas. It is written in c++ and has many prebuilt applications related to thermal vision. One of the applications we were interested in our project was the mmcamera calibrator app that has multi-modal camera calibration. 
+### BoofCV 
+BoofCV is a opensource library similar to opencv but for real-time computer vision and is based on java virtual machine. The library is written in java but there is also support for python. This library is used to calibrate the thermal camera and the depth camera using the hermann grid. 
+### Astra SDK and OpenNI
+The AstraSDK and Openni for linux both create the driver support to use the Astra Camera in linux through USB connectivity. Besides the SDK provided by Astra, there is also a ROS package available \textit{(ros\_astra)} which can be directly used if ROS is pre-installed in the computer.  
+###  AAU VAP Trimodal People segmentation dataset - https://www.kaggle.com/aalborguniversity/trimodal-people-segmentation
+We used this dataset which provides 3 different scenes of a trimodal video capture recorded in visible, depth and thermal cameras. This dataset also comes with the calibration parameters of the cameras used in their recording.
