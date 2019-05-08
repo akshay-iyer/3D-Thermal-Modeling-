@@ -37,6 +37,7 @@ This approach involves fusing a depth point cloud and a thermal point cloud for 
 For a detailed explanation, kindly refer to https://drive.google.com/file/d/1nJGxJrqAVkLG7GgIozAzmcEhZ3U6ULhN/view?usp=sharing
 
 ## Sample Results
+The follwoing image is the screenshot of the 3D pointcloud created. PCL viewer can be used to view the 3D model. As we can see, that the created 3D thermal model from the dataset contains clearly discernible features. We can identify hot objects like the jug and the ventilator at the wall. As also once can clearly identify the people as high temperature entities. One is able to discern the relatively cold chair, tables and window frame despite it not being very clear in the depth image.
 
 ## Useful Tools and datasets for thermal modeling 
 We have explored a variety of tools for camera calibration as our setup is a multi-modal setup and requires different types of calibration process. They have been specified below alongwith their significance in the project so it can help the readers interested in working in this domain:
@@ -51,3 +52,23 @@ The AstraSDK and Openni for linux both create the driver support to use the Astr
 ###  AAU VAP Trimodal People segmentation dataset 
 https://www.kaggle.com/aalborguniversity/trimodal-people-segmentation
 We used this dataset which provides 3 different scenes of a trimodal video capture recorded in visible, depth and thermal cameras. This dataset also comes with the calibration parameters of the cameras used in their recording.
+
+## Code Usage:
+To run the following code, ensure you have PointCloudLibrary (http://pointclouds.org/) installed on your machine.
+1. Clone the repo
+2. Open a new terminal
+3. Type the following:
+
+```console
+mkdir build
+cd build
+cmake ..
+make
+./model
+```
+This will create a 3D pointcloud file 00000.pcd for the first pair of images.
+
+To view pointcloud file, go to the folder where it is saved and open a terminal there and run:
+```console
+pcl_viewer 00000.pcd
+```
