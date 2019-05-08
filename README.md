@@ -48,5 +48,6 @@ Thermalvis is a opensource software written by Stephen Vidas. It is written in c
 BoofCV is a opensource library similar to opencv but for real-time computer vision and is based on java virtual machine. The library is written in java but there is also support for python. This library is used to calibrate the thermal camera and the depth camera using the hermann grid. 
 ### Astra SDK and OpenNI
 The AstraSDK and Openni for linux both create the driver support to use the Astra Camera in linux through USB connectivity. Besides the SDK provided by Astra, there is also a ROS package available \textit{(ros\_astra)} which can be directly used if ROS is pre-installed in the computer.  
-###  AAU VAP Trimodal People segmentation dataset - https://www.kaggle.com/aalborguniversity/trimodal-people-segmentation
+###  AAU VAP Trimodal People segmentation dataset 
+https://www.kaggle.com/aalborguniversity/trimodal-people-segmentation
 We used this dataset which provides 3 different scenes of a trimodal video capture recorded in visible, depth and thermal cameras. This dataset also comes with the calibration parameters of the cameras used in their recording.
